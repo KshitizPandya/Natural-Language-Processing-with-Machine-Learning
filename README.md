@@ -120,18 +120,32 @@ Vectorization can also be explained as a process of encoding text as integers to
 **feature vectors** which is an n-dimensional vector of numerical features that represent
 some object.
 
-In simple words, out **Count Vectorizer** creates a document-term matrix where the entry of each cell will be 
+In simple words, our **Count Vectorizer** creates a document-term matrix where the entry of each cell will be 
 a count of the number of times that word occurred in that document.
 
-For example: we have a sentence: 
+For example, we have a sentence: 
 
 `My Name Is XYZ. Firstly, I Completed My  B.E. In 2019 From Gujarat Technology University. I Like Playing Cricket And Reading Books. Also, I Am From Amreli Which Is Located In Gujrat.`
+
+Its corresponding output sparse matrix after vectorization will be something like this:
 
 ![output_1](https://user-images.githubusercontent.com/110394695/211851413-df2c3a69-3cd4-4558-ae96-bf86c276f10f.png)
 ![output_2](https://user-images.githubusercontent.com/110394695/211851464-b1ce397d-6f9e-4889-a0c0-4ccd4b623ef4.png)
 
 
 ### [N Grams](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/3.%20Vectorizing%20Raw%20Data/3.2.%20N_grams.ipynb)
+N-grams are continuous sequences of words or symbols or tokens in a document. In Techincal terms, they can be defined as the neighbouring sequences of items in a document.
+
+**N-grams** creates a document term matrix where counts still occupy the cell
+but instead of the columns representing single terms, they represent all combinations of adjacent words of length n in your text.
+
+In simple words, if we take an example into consideration of a sentence:
+
+`NLP is an intersting topic`
+
+it can be divided into parts easily, like bigrams, trigrams, fourgrams, etc., which signifies sequence of two words, three words, and four words respectively.
+
+![output_3](https://user-images.githubusercontent.com/110394695/211855348-2c59d74a-0667-4e07-9c04-7f58168301e5.png)
 
 
 ### [TF-IDF](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/3.%20Vectorizing%20Raw%20Data/3.3.%20TF-IDF.ipynb)
