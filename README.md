@@ -163,5 +163,6 @@ TF-IDF for a word in a document is calculated by multiplying two different metri
 
 To put this in mathematical form, it can be can calculated using the given equation:
 
-![tf-idf equation](https://user-images.githubusercontent.com/110394695/211857880-1a9e4ffb-0c57-4ac4-9e70-6e047a01425c.png)
+![tf-idf equation](https://user-images.githubusercontent.com/110394695/211858157-8d28c363-fc93-458e-b237-78bc680aa3c2.png)
+
 
