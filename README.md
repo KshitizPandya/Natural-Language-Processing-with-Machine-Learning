@@ -149,3 +149,19 @@ it can be divided into parts easily, like bigrams, trigrams, fourgrams, etc., wh
 
 
 ### [TF-IDF](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/3.%20Vectorizing%20Raw%20Data/3.3.%20TF-IDF.ipynb)
+TF-IDF stands for, **Term Frequency - Inverse Document Frequency**.
+
+TF-IDF (term frequency-inverse document frequency) is a statistical measure that evaluates how relevant a word is to a document in a collection of documents.
+
+This is done by multiplying two metrics: how many times a word appears in a document, and the inverse document frequency of the word across a set of documents.
+
+TF-IDF for a word in a document is calculated by multiplying two different metrics:
+
+* The term frequency of a word in a document. There are several ways of calculating this frequency, with the simplest being a raw count of instances a word appears in a document. Then, there are ways to adjust the frequency, by length of a document, or by the raw frequency of the most frequent word in a document.
+* The inverse document frequency of the word across a set of documents. This means, how common or rare a word is in the entire document set. The closer it is to 0, the more common a word is. This metric can be calculated by taking the total number of documents, dividing it by the number of documents that contain a word, and calculating the logarithm.
+* So, if the word is very common and appears in many documents, this number will approach 0. Otherwise, it will approach 1.
+
+To put this in mathematical form, it can be can calculated using the given equation:
+
+![tf-idf equation](https://user-images.githubusercontent.com/110394695/211857880-1a9e4ffb-0c57-4ac4-9e70-6e047a01425c.png)
+
