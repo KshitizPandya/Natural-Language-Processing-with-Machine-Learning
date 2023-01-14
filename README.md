@@ -13,6 +13,9 @@ its respective `.ipynb` files.
 
 [Click Here](https://drive.google.com/file/d/1QIDyNzIfTYHR92-sQlRys_gpycBKnkLG/view?usp=sharing), to download the dataset directly.
 
+![lets get started](https://user-images.githubusercontent.com/110394695/212464206-23573afd-2f53-47b2-ae5a-f1db3c868167.gif)
+
+
 ## Table of Contents
 * [NLP Basics](#NLP-Basics)
 * [Data Cleaning](#Data-Cleaning)
