@@ -165,4 +165,32 @@ To put this in mathematical form, it can be can calculated using the given equat
 
 ![tf-idf equation](https://user-images.githubusercontent.com/110394695/211858157-8d28c363-fc93-458e-b237-78bc680aa3c2.png)
 
+## *Feature Engineering*
+Feature engineering is the pre-processing step of machine learning, which is used to transform raw data into features that can be used for creating a predictive model using Machine learning or statistical Modelling. 
+Simply putting it, feature engineering aims to imrpove the performance of the models.
+
+### [Feature Creation](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/4.%20Feature%20Engineering/4.1.%20Feature%20Creation.ipynb)
+Feature creation is the process of taking raw data and transforming it into features that can be used in machine learning models. This includes extracting relevant information, identifying specific keywords, calculating summary statistics, converting categorical variables into numerical variables, combining multiple features, etc. These resulting features are used as input for the model, allowing it to make predictions or classifications based on the information contained in the features.
+
+![feature-engineering-for-machine-learning2](https://user-images.githubusercontent.com/110394695/212463269-8994797d-4a99-4296-ac28-2dba434ce792.png)
+
+
+Some examples of feature creation include:
+
+* Extracting the length of text in a document as a feature for a text classification model.
+
+* Identifying the presence of specific keywords in customer reviews as features for a sentiment analysis model.
+
+* Calculating the average color of an image as a feature for an image classification model.
+
+* Converting categorical variables into numerical variables by using one-hot encoding for a model that will be used for prediction or classification.
+
+* Extracting the frequency of certain words in a text for text classification or natural language processing tasks.
+
+* Combining multiple features such as age, income, and education level to create a new feature for a model that will be used for predicting customer behavior.
+
+
+
+### [Feature Transformationn](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/4.%20Feature%20Engineering/4.2.%20Transformation.ipynb)
+ 
 
