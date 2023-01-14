@@ -15,7 +15,7 @@ its respective `.ipynb` files.
 
 
 <!-- ![2nd](https://user-images.githubusercontent.com/110394695/212464339-aec410c0-01e1-40e5-9982-98bb8aab189a.gif) -->
-<img src="https://user-images.githubusercontent.com/110394695/212464339-aec410c0-01e1-40e5-9982-98bb8aab189a.gif" width="400" height="200">
+<img src="https://user-images.githubusercontent.com/110394695/212464339-aec410c0-01e1-40e5-9982-98bb8aab189a.gif" width="600" height="200">
 
 
 ## Table of Contents
