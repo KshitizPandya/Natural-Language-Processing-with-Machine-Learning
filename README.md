@@ -225,11 +225,12 @@ Transformation follows the process:
 
 | X    | Base Form           |           Transformation               |
 |------|--------------------------|--------------------------|
-| -2   | y<sup>-2</sup>           | $$ \frac{1}{y^2} $$      |
-| -1   | y<sup>-1</sup>           | $$ \frac{1}{y} $$        |
-| -0.5 | $$ y<sup>-1/2</sup>      | $$ \frac{1}{\sqrt{y}} $$ |
-| 0    | $$ y^{0} $$              | $$ log(y) $$             |
-| 0.5  | $$ y ^ {\frac{1}{2}}  $$ | $$ \sqrt{y} $$           |
-| 1    | $$ y^{1} $$              | $$ y $$                  |
-| 2    | $$ y^{2} $$              | $$ y^2 $$                |
+| -2   | y<sup>-2</sup>           | 1/y<sup>2</sup>          |
+| -1   | y<sup>-1</sup>           | 1/y        |
+| -0.5 | y<sup>-1/2</sup>         | $$ \frac{1}{\sqrt{y}} $$ |
+| 0    | y<sup>0</sup>            | $$ log(y) $$             |
+| 0.5  | y<sup>1/2</sup>          | $$ \sqrt{y} $$           |
+| 1    | y<sup>1</sup>            | $$ y $$                  |
+| 2    | y<sup>2</sup>            | $$ y^2 $$                |
 
+$\sqrt{\$4}$
