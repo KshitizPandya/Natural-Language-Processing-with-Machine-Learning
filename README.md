@@ -194,4 +194,4 @@ Some examples of feature creation include:
 ### [Feature Transformationn](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/4.%20Feature%20Engineering/4.2.%20Transformation.ipynb)
  
 
-
+![](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/test%20output/giphy.gif)
