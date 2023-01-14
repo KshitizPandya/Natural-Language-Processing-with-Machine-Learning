@@ -208,6 +208,7 @@ There are a variety of techniques that can be used for feature creation, dependi
 
 There are many types of transformation:
 
-![feature-engineering-for-machine-learning2](https://user-images.githubusercontent.com/110394695/212464799-a7d35f17-442e-4a23-8553-f9cdb531120a.png)
+![feature-engineering-for-machine-learning2](https://user-images.githubusercontent.com/110394695/212464817-df75e67e-e33c-417a-8161-6273cc38208c.png)
+
 
 
