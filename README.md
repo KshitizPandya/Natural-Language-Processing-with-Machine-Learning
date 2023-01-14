@@ -227,7 +227,7 @@ Transformation follows the process:
 |------|--------------------------|--------------------------|
 | -2   | y<sup>-2</sup>           | 1/y<sup>2</sup>          |
 | -1   | y<sup>-1</sup>           | 1/y        |
-| -0.5 | y<sup>-1/2</sup>         | $$ \frac{1}{\sqrt{y}} $$ |
+| -0.5 | y<sup>-1/2</sup>         | 1/$\sqrt{y}$|
 | 0    | y<sup>0</sup>            | $$ log(y) $$             |
 | 0.5  | y<sup>1/2</sup>          | $$ \sqrt{y} $$           |
 | 1    | y<sup>1</sup>            | $$ y $$                  |
