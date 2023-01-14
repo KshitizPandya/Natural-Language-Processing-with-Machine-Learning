@@ -196,9 +196,18 @@ Some examples of feature creation include:
 
 
 
-### [Feature Transformationn](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/4.%20Feature%20Engineering/4.2.%20Transformation.ipynb)
- 
+### [Feature Transformation](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/4.%20Feature%20Engineering/4.2.%20Transformation.ipynb)
+In machine learning, feature creation refers to the process of taking raw data and transforming it into features that can be used as input for a model. The goal of feature creation is to extract the most relevant information from the raw data and represent it in a format that is useful for the model. This process is also known as feature engineering or feature extraction.
+There are a variety of techniques that can be used for feature creation, depending on the type of data and the machine learning task. Some examples include:
 
-<!-- ![giphy](https://user-images.githubusercontent.com/110394695/212463912-229e0505-d033-4d66-8e4d-4a501e6bc74f.gif) -->
+* Extracting specific information from raw data: For example, in a text classification task, the raw data may be a set of documents, and the features could be the frequency of specific words or phrases in those documents.
+
+* Creating new features by combining or transforming existing ones: For example, in a dataset with multiple features such as age, income, and education level, a new feature could be created by combining these features in a meaningful way, such as a "socioeconomic status" feature.
+
+* Encoding categorical variables: Some machine learning models can only handle numerical data, so categorical variables (such as "red", "green", "blue") must be encoded as numerical values (such as 0, 1, 2).
+
+There are many types of transformation:
+
+![feature-engineering-for-machine-learning2](https://user-images.githubusercontent.com/110394695/212464799-a7d35f17-442e-4a23-8553-f9cdb531120a.png)
 
 
