@@ -223,14 +223,12 @@ Transformation follows the process:
 * Apply each transformation to each value of your chosen feature.
 * Use some criteria to determine which of the transformations yield the best distribution.
 
-| X    | Base Form           |           Transformation               |
+| X    | Base Form                | Transformation           |
 |------|--------------------------|--------------------------|
 | -2   | y<sup>-2</sup>           | 1/y<sup>2</sup>          |
-| -1   | y<sup>-1</sup>           | 1/y        |
-| -0.5 | y<sup>-1/2</sup>         | 1/$\sqrt{y}$|
-| 0    | y<sup>0</sup>            | $$ log(y) $$             |
-| 0.5  | y<sup>1/2</sup>          | $$ \sqrt{y} $$           |
-| 1    | y<sup>1</sup>            | $$ y $$                  |
-| 2    | y<sup>2</sup>            | $$ y^2 $$                |
-
-$\sqrt{\$4}$
+| -1   | y<sup>-1</sup>           | 1/y                      |
+| -0.5 | y<sup>-1/2</sup>         | 1/ $\sqrt{y}$            |
+| 0    | y<sup>0</sup>            | log(y)                   |
+| 0.5  | y<sup>1/2</sup>          | $\sqrt{y}$               |
+| 1    | y<sup>1</sup>            | y                        |
+| 2    | y<sup>2</sup>            | y<sup>2</sup>            |
