@@ -13,7 +13,8 @@ its respective `.ipynb` files.
 
 [Click Here](https://drive.google.com/file/d/1QIDyNzIfTYHR92-sQlRys_gpycBKnkLG/view?usp=sharing), to download the dataset directly.
 
-![2nd](https://user-images.githubusercontent.com/110394695/212464253-e2e3b95b-6e84-4c45-96ef-5d2c64ccbf55.gif)
+
+![2nd](https://user-images.githubusercontent.com/110394695/212464339-aec410c0-01e1-40e5-9982-98bb8aab189a.gif)
 
 
 
