@@ -150,7 +150,11 @@ In simple words, if we take an example into consideration of a sentence:
 
 it can be divided into parts easily, like bigrams, trigrams, fourgrams, etc., which signifies sequence of two words, three words, and four words respectively.
 
-![output_3](https://user-images.githubusercontent.com/110394695/211855348-2c59d74a-0667-4e07-9c04-7f58168301e5.png)
+| n | Name      | Tokens                                                         |
+|---|-----------|----------------------------------------------------------------|
+| 2 | bigram    | ["nlp is", "is an", "an interesting", "interesting topic"]      |
+| 3 | trigram   | ["nlp is an", "is an interesting", "an interesting topic"] |
+| 4 | four-gram | ["nlp is an interesting", "is an interesting topic"]    |
 
 
 ### [TF-IDF](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/3.%20Vectorizing%20Raw%20Data/3.3.%20TF-IDF.ipynb)
@@ -206,7 +210,7 @@ There are a variety of techniques that can be used for feature creation, dependi
 
 * Encoding categorical variables: Some machine learning models can only handle numerical data, so categorical variables (such as "red", "green", "blue") must be encoded as numerical values (such as 0, 1, 2).
 
-There are many types of transformation:
+**Types of Transformation**:
 
 ![feature-transformation-in-data-mining](https://user-images.githubusercontent.com/110394695/212464857-face8fab-a7ae-4d56-96d9-167e86f1cafe.png)
 
@@ -215,6 +219,17 @@ Here, we will learn how to do *Box-cow Power Tranformation*
 Where the equation's base form is: y<sup>x</sup>
 
 Transformation follows the process:
+* Determine what range of exponents to test.
+* Apply each transformation to each value of your chosen feature.
+* Use some criteria to determine which of the transformations yield the best distribution.
 
-Markup: * sdds
-        * sdssdsd
+| X    | Base Form           |           Transformation               |
+|------|--------------------------|--------------------------|
+| -2   | $$ y ^ {-2} $$           | $$ \frac{1}{y^2} $$      |
+| -1   | $$ y ^ {-1} $$           | $$ \frac{1}{y} $$        |
+| -0.5 | $$ y ^ {\frac{-1}{2}} $$ | $$ \frac{1}{\sqrt{y}} $$ |
+| 0    | $$ y^{0} $$              | $$ log(y) $$             |
+| 0.5  | $$ y ^ {\frac{1}{2}}  $$ | $$ \sqrt{y} $$           |
+| 1    | $$ y^{1} $$              | $$ y $$                  |
+| 2    | $$ y^{2} $$              | $$ y^2 $$                |
+
