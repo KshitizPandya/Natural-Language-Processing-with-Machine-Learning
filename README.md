@@ -194,6 +194,6 @@ Some examples of feature creation include:
 ### [Feature Transformationn](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/4.%20Feature%20Engineering/4.2.%20Transformation.ipynb)
  
 
-![giphy](https://user-images.githubusercontent.com/110394695/212463912-229e0505-d033-4d66-8e4d-4a501e6bc74f.gif)
+<!-- ![giphy](https://user-images.githubusercontent.com/110394695/212463912-229e0505-d033-4d66-8e4d-4a501e6bc74f.gif) -->
 
-<img src="https://user-images.githubusercontent.com/110394695/212463912-229e0505-d033-4d66-8e4d-4a501e6bc74f.gif" width="48">
+<img src="https://user-images.githubusercontent.com/110394695/212463912-229e0505-d033-4d66-8e4d-4a501e6bc74f.gif" width="400">
