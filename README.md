@@ -196,4 +196,4 @@ Some examples of feature creation include:
 
 <!-- ![giphy](https://user-images.githubusercontent.com/110394695/212463912-229e0505-d033-4d66-8e4d-4a501e6bc74f.gif) -->
 
-<img src="https://user-images.githubusercontent.com/110394695/212463912-229e0505-d033-4d66-8e4d-4a501e6bc74f.gif" width="1000">
+<img src="https://user-images.githubusercontent.com/110394695/212463912-229e0505-d033-4d66-8e4d-4a501e6bc74f.gif" width="1000" height="400">
