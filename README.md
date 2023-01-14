@@ -210,4 +210,8 @@ There are many types of transformation:
 
 ![feature-transformation-in-data-mining](https://user-images.githubusercontent.com/110394695/212464857-face8fab-a7ae-4d56-96d9-167e86f1cafe.png)
 
+Here, we will learn how to do *Box-cow Power Tranformation*
+
+Where the equation's base form is: y<sup>x</sup>
+
 
