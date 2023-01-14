@@ -214,4 +214,7 @@ Here, we will learn how to do *Box-cow Power Tranformation*
 
 Where the equation's base form is: y<sup>x</sup>
 
+Transformation follows the process:
 
+Markup: * sdds
+        * sdssdsd
