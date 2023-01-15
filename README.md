@@ -287,7 +287,7 @@ The algorithm starts by fitting a simple model, such as a decision tree, to the 
 
 One of the key features of gradient boosting is the use of gradient descent to minimize the loss function, which measures the difference between the predicted values and the actual values. The algorithm adjusts the parameters of the decision trees in order to minimize this loss function, hence the name "gradient boosting."
 
-![gradient boosting](https://user-images.githubusercontent.com/110394695/212522731-4d842758-6ad9-4bb4-ba72-a8923d389c55.png)
+![The-architecture-of-Gradient-Boosting-Decision-Tree-removebg-preview](https://user-images.githubusercontent.com/110394695/212522826-cb3b6acf-21a4-4091-8b1f-3ce9fd53820c.png)
 
 Gradient Boosting has several advantages over traditional decision tree models, including:
 
