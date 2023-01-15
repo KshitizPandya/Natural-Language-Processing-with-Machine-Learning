@@ -249,11 +249,12 @@ Well, a classifier is the algorithm itself - the rules used by machines to class
 
 *The model is trained using the classfier, so that the model, ultimately **classifes** your data*.
 
-The topics below are the direct implementation and knowledge on how to perform the tasks of classifying and selecting the best model suitable. 
+The topics below are the direct implementation and knowledge on how to perform the tasks of classifying and selecting the best model suitable. Therefore, let's deep dive into the key concepts performed below before we implement it.
 
-Prerequisite: **ensemble method-** *Technique that creates multiple models and then combines them to produce better results than any of the single models individually.*
 
-### [Building a Basic Random Forest Model](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.1.%20Building%20a%20basic%20Random%20Forest%20Model.ipynb)
+#### **What is an ensemble method?** 
+Technique that creates multiple models and then combines them to produce better results than any of the single models individually.
+#### **What is a Random Forest Model?** 
 Random Forest is a powerful machine learning algorithm that **creates multiple decision trees and combines them to produce a more accurate and stable prediction**. It is widely used in various applications, such as image and speech recognition, natural language processing and bioinformatics.
 
 Let's do a bit more deep diving into Random forest. 
@@ -266,7 +267,7 @@ Random Forest uses a technique called bootstrapping, which involves randomly sel
 
 It also uses a technique called random feature selection, which involves randomly selecting a subset of features to split on at each internal node of the decision tree. This helps to decorrelate the trees and improve the overall performance of the model.
 
-![random forest](https://user-images.githubusercontent.com/110394695/212522399-c9c53a29-3428-4059-a9ce-b31ac68da7c9.png)
+![random_forest-removebg-preview](https://user-images.githubusercontent.com/110394695/212522727-c1fd4757-9e07-443d-a734-6fc41026feca.png)
 
 Random Forest models have several advantages over traditional decision tree models, including:
 
@@ -274,6 +275,30 @@ Random Forest models have several advantages over traditional decision tree mode
 * They are more accurate and robust than single decision trees.
 * They can handle missing values and large number of categorical variables.
 * They can give feature importance which is useful in feature selection.
+
+#### **What is a Gradient Boosting Model?**
+Gradient Boosting is a powerful machine learning algorithm that creates many decision trees in a sequential manner to improve the accuracy of the model. It has been widely adopted in various fields, such as computer vision, natural language processing and bioinformatics, and it is implemented in popular libraries like XGBoost, LightGBM, and CatBoost.
+
+Let's deep dive into it. 
+
+Gradient Boosting is a type of ensemble machine learning algorithm that is used for both classification and regression tasks. It is similar to Random Forest, but it creates the decision trees one at a time in a sequential manner and each new tree is created to correct the errors made by the previous tree.
+
+The algorithm starts by fitting a simple model, such as a decision tree, to the data. Then, it iteratively adds new decision trees to the model, each tree trying to correct the errors made by the previous trees. The idea behind this is that by combining many weak learners (i.e. decision trees with high bias and low variance), a strong learner (i.e. a model with low bias and high variance) can be created.
+
+One of the key features of gradient boosting is the use of gradient descent to minimize the loss function, which measures the difference between the predicted values and the actual values. The algorithm adjusts the parameters of the decision trees in order to minimize this loss function, hence the name "gradient boosting."
+
+![gradient boosting](https://user-images.githubusercontent.com/110394695/212522731-4d842758-6ad9-4bb4-ba72-a8923d389c55.png)
+
+Gradient Boosting has several advantages over traditional decision tree models, including:
+
+* It can handle missing values and categorical variables
+* It can work well with large datasets
+* It can improve the performance of the model by iteratively adding decision trees
+* It can give feature importance which is useful in feature selection
+
+
+### [Building a Basic Random Forest Model](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.1.%20Building%20a%20basic%20Random%20Forest%20Model.ipynb)
+
 
 ### [Random Forest on a Holdout Test Set](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.2.%20Random%20Forest%20on%20a%20holdout%20test%20set.ipynb)
 
@@ -291,5 +316,4 @@ Random Forest models have several advantages over traditional decision tree mode
 
 
 ### [Model Selection](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.7.%20Model%20Selection.ipynb)
-
 
