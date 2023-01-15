@@ -298,12 +298,49 @@ Gradient Boosting has several advantages over traditional decision tree models, 
 
 
 ### [Building a Basic Random Forest Model](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.1.%20Building%20a%20basic%20Random%20Forest%20Model.ipynb)
+Here, we explored how to build a random forest model.
 
+Exploring of RandomForestClassifiers attributes and hyperparameters and taken into consideration.
 
+Also, light has been given to exploring RandomForestClassifier via Cross - Validation. 
+
+#### **What is Cross - Validation?**
+Cross-validation is a technique used to evaluate the performance of a machine learning model by dividing the data into two or more partitions: a training set and one or more validation sets. The model is trained on the training set and then evaluated on the validation set(s).
+
+There are different types of cross-validation methods, but the most common ones are:
+
+* **K-fold cross-validation:** The data is divided into k partitions, where k-1 partitions are used for training, and the remaining partition is used for validation. This process is repeated k times, with each partition being used as the validation set once. The final performance score is the average of all k iterations.
+
+* **Leave-p-out cross-validation:** p data points are left out as the validation set and the remaining data is used for training. This process is repeated for all possible combinations of p data points.
+
+* **Holdout cross-validation:** A fixed percentage of the data is used as the validation set and the remaining data is used for training. This process is repeated multiple times with different random subsets of data being used as the validation set.
+
+Cross-validation is a powerful technique that helps to mitigate the problem of overfitting. It allows the model to be evaluated on unseen data and provides a more accurate estimate of the model's performance on new data. It is also useful for model selection as it allows comparing the performance of different models and choose the best one.
+
+It's important to keep in mind that cross-validation should be performed after the feature creation process and should be done on the same dataset that will be used for the final evaluation, to ensure that the model generalizes well to new unseen data.
+
+NOTE: Here, we explored K-fold cross validation.
 ### [Random Forest on a Holdout Test Set](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.2.%20Random%20Forest%20on%20a%20holdout%20test%20set.ipynb)
+Hold out test set can be simply explained as a sample of data not used in fitting a model for the purpose of evaluating the model's ability to generalize unseen data.
+
+Therefore, here we used this concept to gain the basic understanding on it works.
 
 
 ### [Explore Random Forest Model with Grid Search](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.3.%20Explore%20Random%20Forest%20Model%20with%20Grid-Search.ipynb)
+Grid search is a technique used to find the best set of hyperparameters for a machine learning model. Hyperparameters are parameters that are not learned from the data but are set prior to training the model. Examples of hyperparameters include the learning rate, the number of trees in a random forest, or the regularization strength in a linear regression model.
+
+In grid search, a set of possible values for each hyperparameter is defined, and the algorithm will train and evaluate the model for each combination of hyperparameter values. This process creates a "grid" of possible hyperparameter combinations, hence the name "grid search".
+
+For example, if we want to find the best number of trees and the best maximum depth for a random forest model, we could set the range of values for the number of trees from 20 to 100 with a step of 10, and for the maximum depth from 2 to 8 with a step of 2. This would create a grid of (8*5=40) possible combinations, and the algorithm will train and evaluate the model for each combination.
+
+The grid search process will return the combination of hyperparameters that performed the best on the validation set. The model can then be retrained using these optimal hyperparameters on the entire training set, and then evaluated on the test set.
+
+Therefore where the output of normal models looks like this: 
+![normal](https://user-images.githubusercontent.com/110394695/212532422-81d56543-eb90-4f1d-884a-6165c5abd864.png)
+
+GridSearch model's evaluation looks like this:
+![grid search](https://user-images.githubusercontent.com/110394695/212532439-025d3410-261f-431e-81f4-7d166f4fa9ba.png)
+
 
 
 ### [Evaluate Random Forest with GridSearchCV](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.4.%20Evaluate%20Random%20Forest%20with%20GridSearchCV.ipynb)
@@ -316,4 +353,3 @@ Gradient Boosting has several advantages over traditional decision tree models, 
 
 
 ### [Model Selection](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.7.%20Model%20Selection.ipynb)
-
