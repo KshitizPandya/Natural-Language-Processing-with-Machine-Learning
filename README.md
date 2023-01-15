@@ -232,3 +232,64 @@ Transformation follows the process:
 | 0.5  | y<sup>1/2</sup>          | $\sqrt{y}$               |
 | 1    | y<sup>1</sup>            | y                        |
 | 2    | y<sup>2</sup>            | y<sup>2</sup>            |
+
+
+## *Building Machine Learning Clssifiers*
+Now, as we are this far, we will start building our ML model. 
+
+So, what is a classifier in Machine Learning?
+
+A classifier in machine learning is an algorithm that automatically orders or categorizes data into one or more set of "classes". 
+
+Let's take a very common example, i.e., E-mail. An E-mail classifier always scans the mails recieved and marks them as class labels: `spam mails` or `non spam mails`. 
+
+Then the question arises, what is the difference between a ML classifier and an ML model?
+
+Well, a classifier is the algorithm itself - the rules used by machines to classify data. A model on the other hand, is the end result of your classifier's machine learning.
+
+*The model is trained using the classfier, so that the model, ultimately **classifes** your data*.
+
+The topics below are the direct implementation and knowledge on how to perform the tasks of classifying and selecting the best model suitable. 
+
+Prerequisite: **ensemble method-** *Technique that creates multiple models and then combines them to produce better results than any of the single models individually.*
+
+### [Building a Basic Random Forest Model](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.1.%20Building%20a%20basic%20Random%20Forest%20Model.ipynb)
+Random Forest is a powerful machine learning algorithm that **creates multiple decision trees and combines them to produce a more accurate and stable prediction**. It is widely used in various applications, such as image and speech recognition, natural language processing and bioinformatics.
+
+Let's do a bit more deep diving into Random forest. 
+
+Random Forest is a popular ensemble machine learning algorithm that is based on decision trees. It is a type of **supervised learning** algorithm that can be used for both classification and regression tasks.
+
+A decision tree is a flowchart-like tree structure where an internal node represents a feature(or attribute), the branch represents a decision rule, and each leaf node represents the outcome. In a random forest, multiple decision trees are created, and the final output is determined by the majority vote of the decision trees.
+
+Random Forest uses a technique called bootstrapping, which involves randomly selecting a subset of data from the original dataset to train each decision tree. This helps to reduce overfitting, which is a common problem with decision trees.
+
+It also uses a technique called random feature selection, which involves randomly selecting a subset of features to split on at each internal node of the decision tree. This helps to decorrelate the trees and improve the overall performance of the model.
+
+![random forest](https://user-images.githubusercontent.com/110394695/212522399-c9c53a29-3428-4059-a9ce-b31ac68da7c9.png)
+
+Random Forest models have several advantages over traditional decision tree models, including:
+
+* They are less prone to overfitting, as a large number of relatively uncorrelated trees are combined.
+* They are more accurate and robust than single decision trees.
+* They can handle missing values and large number of categorical variables.
+* They can give feature importance which is useful in feature selection.
+
+### [Random Forest on a Holdout Test Set](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.2.%20Random%20Forest%20on%20a%20holdout%20test%20set.ipynb)
+
+
+### [Explore Random Forest Model with Grid Search](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.3.%20Explore%20Random%20Forest%20Model%20with%20Grid-Search.ipynb)
+
+
+### [Evaluate Random Forest with GridSearchCV](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.4.%20Evaluate%20Random%20Forest%20with%20GridSearchCV.ipynb)
+
+
+### [Explore Gradient Boosting Model with Grid-Search](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.5.%20Explore%20Gradient%20Boosting%20model%20with%20Grid-Search.ipynb)
+
+
+### [Evaluate Gradient Boosting with GridSearchCV](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.6.%20Evaluate%20Gradient%20Boosting%20with%20GridSearchCV.ipynb)
+
+
+### [Model Selection](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.7.%20Model%20Selection.ipynb)
+
+
