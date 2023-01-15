@@ -235,15 +235,8 @@ Transformation follows the process:
 * Apply each transformation to each value of your chosen feature.
 * Use some criteria to determine which of the transformations yield the best distribution.
 
-| X    | Base Form                | Transformation           |
-|------|--------------------------|--------------------------|
-| -2   | y<sup>-2</sup>           | 1/y<sup>2</sup>          |
-| -1   | y<sup>-1</sup>           | 1/y                      |
-| -0.5 | y<sup>-1/2</sup>         | 1/ $\sqrt{y}$            |
-| 0    | y<sup>0</sup>            | log(y)                   |
-| 0.5  | y<sup>1/2</sup>          | $\sqrt{y}$               |
-| 1    | y<sup>1</sup>            | y                        |
-| 2    | y<sup>2</sup>            | y<sup>2</sup>            |
+![transformation](https://user-images.githubusercontent.com/110394695/212546806-2da2ae6e-ceac-493a-9f0c-b1843d857220.png)
+
 
 
 ## *Building Machine Learning Clssifiers*
@@ -341,15 +334,21 @@ Before going further, it is important to know what is classification evaluation 
 
 **Accuracy-** it is defined as the number of true positives and true negatives divided by the number of true positives, true negatives, false positives, and false negatives.
 
-Accuracy = ${Number \space of \space correct \space predictions} \over {Total \space number \space of \space obeseravations}$
+
+
+![Accuracy_1](https://user-images.githubusercontent.com/110394695/212546859-888f79bf-cb4e-4c1c-8287-5db1709a70a6.png)
+
 
 **Precision-** Precision is defined as the ratio of correctly classified positive samples (True Positive) to a total number of classified positive samples (either correctly or incorrectly).
 
-Precision = ${Number \space of \space prediction \space as \space spam \space that \space are \space actually \space spam} \over {Total \space number \space of \space prediction \space as \space spam}$
+![precision_2](https://user-images.githubusercontent.com/110394695/212546865-90ffcf99-415e-4ca3-88ff-546d48cd09a8.png)
+
+
 
 **Recall-** The recall is calculated as the ratio between the numbers of Positive samples correctly classified as Positive to the total number of Positive samples. The recall measures the model's ability to detect positive samples. The higher the recall, the more positive samples detected. 
 
-Recall = ${Number \space of \space prediction \space as \space spam \space that \space are \space actually \space spam} \over {Total \space number \space of \space predictions \space that \space are \space actually \space spam}$
+![recall_3](https://user-images.githubusercontent.com/110394695/212546874-00c488f6-f90f-4d98-8c68-ad3d058b22bb.png)
+
 
 ### [Explore Random Forest Model with Grid Search](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.3.%20Explore%20Random%20Forest%20Model%20with%20Grid-Search.ipynb)
 Grid search is a technique used to find the best set of hyperparameters for a machine learning model. Hyperparameters are parameters that are not learned from the data but are set prior to training the model. Examples of hyperparameters include the learning rate, the number of trees in a random forest, or the regularization strength in a linear regression model.
