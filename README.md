@@ -477,7 +477,6 @@ To know more about the parameters, you can refer to the Medium's blog [here](htt
 <a href="https://instagram.com/kshitiz._.pandya">
   <img alt="Instagram" src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" />
 </a>
-</a>
 <a href="https://discord.gg/user/KENUBEE#1045">
   <img alt="Discord" src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" />
 </a>
