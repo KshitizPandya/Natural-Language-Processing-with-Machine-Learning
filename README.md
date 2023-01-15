@@ -26,6 +26,10 @@ its respective `.ipynb` files.
 <img src="https://user-images.githubusercontent.com/110394695/212464339-aec410c0-01e1-40e5-9982-98bb8aab189a.gif" width="800" height="100">
 
 
+### License
+
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
+
 ## Table of Contents
 * [NLP Basics](#NLP-Basics)
 * [Data Cleaning](#Data-Cleaning)
