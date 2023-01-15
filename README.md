@@ -325,6 +325,19 @@ Hold out test set can be simply explained as a sample of data not used in fittin
 
 Therefore, here we used this concept to gain the basic understanding on it works.
 
+Before going further, it is important to know what is classification evaluation parameters: Accuracy, Precision and Recall.
+
+**Accuracy-** it is defined as the number of true positives and true negatives divided by the number of true positives, true negatives, false positives, and false negatives.
+
+Accuracy = ${Number \space of \space correct \space predictions} \over {Total \space number \space of \space obeseravations}$
+
+**Precision-** Precision is defined as the ratio of correctly classified positive samples (True Positive) to a total number of classified positive samples (either correctly or incorrectly).
+
+Precision = ${Number \space of \space prediction \space as \space spam \space that \space are \space actually \space spam} \over {Total \space number \space of \space prediction \space as \space spam}$
+
+**Recall-** The recall is calculated as the ratio between the numbers of Positive samples correctly classified as Positive to the total number of Positive samples. The recall measures the model's ability to detect positive samples. The higher the recall, the more positive samples detected. 
+
+Recall = ${Number \space of \space prediction \space as \space spam \space that \space are \space actually \space spam} \over {Total \space number \space of \space predictions \space that \space are \space actually \space spam}$
 
 ### [Explore Random Forest Model with Grid Search](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.3.%20Explore%20Random%20Forest%20Model%20with%20Grid-Search.ipynb)
 Grid search is a technique used to find the best set of hyperparameters for a machine learning model. Hyperparameters are parameters that are not learned from the data but are set prior to training the model. Examples of hyperparameters include the learning rate, the number of trees in a random forest, or the regularization strength in a linear regression model.
@@ -344,9 +357,49 @@ GridSearch model's evaluation looks like this:
 
 
 ### [Evaluate Random Forest with GridSearchCV](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.4.%20Evaluate%20Random%20Forest%20with%20GridSearchCV.ipynb)
+GridSearchCV is a scikit-learn class that implements grid search with cross-validation. It combines the grid search technique with cross-validation to find the best set of hyperparameters for a machine learning model. It takes as input a model, a set of possible values for each hyperparameter, and a scoring metric, and it returns the best set of hyperparameters that maximize the scoring metric.
 
+The class performs k-fold cross-validation for each combination of hyperparameters, where k is a user-specified number. It then returns the combination of hyperparameters that performed the best on the validation set.
+
+For example, if we want to find the best number of trees and the best maximum depth for a random forest model, we could use the GridSearchCV class as follows:
+
+```python
+
+from sklearn.model_selection import GridSearchCV
+from sklearn.ensemble import RandomForestClassifier
+
+param_grid = {'n_estimators': [20, 50, 100], 'max_depth': [2, 4, 8]}
+rf = RandomForestClassifier()
+grid_search = GridSearchCV(rf, param_grid, cv=5, scoring='accuracy')
+grid_search.fit(X_train, y_train)
+
+# Now you can access the best parameters and the best score using the following properties:
+print("Best parameters: ", grid_search.best_params_)
+print("Best accuracy: ", grid_search.best_score_)
+
+# you can also access the best estimator by using:
+best_rf = grid_search.best_estimator_
+
+#You can also check all the results using
+results = grid_search.cv_results_
+
+#you can also use predict function on the best estimator
+y_pred = best_rf.predict(X_test)
+
+# you can also calculate accuracy for the best estimator
+accuracy = accuracy_score(y_test, y_pred)
+print("Test accuracy: ", accuracy)
+
+```
 
 ### [Explore Gradient Boosting Model with Grid-Search](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.5.%20Explore%20Gradient%20Boosting%20model%20with%20Grid-Search.ipynb)
+What grid searching is, is already explained in the above section while exploring the Random forest model.
+
+Therefore, here diving straight on to point, we explored what are the gradient boosting classifiers, and how to build our own grid-search model.
+
+For curiosity, the output of gradient boosting looks something like this (NOTE - Formatting depends personally in your ways):
+![gradient boosting output](https://user-images.githubusercontent.com/110394695/212533400-994b3eb0-c77a-4389-9b60-97c1265cead6.png)
+
 
 
 ### [Evaluate Gradient Boosting with GridSearchCV](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.6.%20Evaluate%20Gradient%20Boosting%20with%20GridSearchCV.ipynb)
