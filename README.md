@@ -464,7 +464,7 @@ To know more about the parameters, you can refer to the Medium's blog [here](htt
 
 **LET'S CONNECT!!!**
 
-
+<p align = "center">
 <a href="https://www.linkedin.com/in/kshitiz-pandya-687659230/">
   <img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
@@ -480,3 +480,4 @@ To know more about the parameters, you can refer to the Medium's blog [here](htt
 <a href="https://discord.gg/user/KENUBEE#1045">
   <img alt="Discord" src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" />
 </a>
+</p>
