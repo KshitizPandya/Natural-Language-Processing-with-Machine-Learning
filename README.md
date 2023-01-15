@@ -462,7 +462,7 @@ To know more about the parameters, you can refer to the Medium's blog [here](htt
 
 **Ping me on my socials below to know more about me**
 
-**Let's connect!!!**
+**LET'S CONNECT!!!**
 
 
 <a href="https://www.linkedin.com/in/kshitiz-pandya-687659230/">
