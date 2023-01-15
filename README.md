@@ -460,7 +460,9 @@ To know more about the parameters, you can refer to the Medium's blog [here](htt
 <img src="https://user-images.githubusercontent.com/110394695/212535375-aec902ea-412e-4275-b097-98876a7a8aa8.gif" width="1000" height="400">
 
 
-**Ping me on my socials below, Let's connect!!!**
+**Ping me on my socials below to know more about me**
+
+**Let's connect!!!**
 
 
 <a href="https://www.linkedin.com/in/kshitiz-pandya-687659230/">
@@ -479,4 +481,3 @@ To know more about the parameters, you can refer to the Medium's blog [here](htt
 <a href="https://discord.gg/user/KENUBEE#1045">
   <img alt="Discord" src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" />
 </a>
-
