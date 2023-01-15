@@ -1,3 +1,11 @@
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+![PyCharm](https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green)
+
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 # Natural Language Processing with Machine Learning
 
 
@@ -401,8 +409,74 @@ For curiosity, the output of gradient boosting looks something like this (NOTE -
 ![gradient boosting output](https://user-images.githubusercontent.com/110394695/212533400-994b3eb0-c77a-4389-9b60-97c1265cead6.png)
 
 
-
 ### [Evaluate Gradient Boosting with GridSearchCV](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.6.%20Evaluate%20Gradient%20Boosting%20with%20GridSearchCV.ipynb)
+GridSearchCV is explained in the above sections already. 
 
+Here we learned how actually implement GridSearchCV for gradient boosting and getting our necessary outputs.
 
+Taking the above example into consideration again, gradient boosting can be achieved like this:
+
+```python
+
+from sklearn.model_selection import GridSearchCV
+from sklearn.ensemble import GradientBoostingClassifier
+
+param_grid = {'n_estimators': [20, 50, 100], 'max_depth': [2, 4, 8]}
+gb = RandomForestClassifier()
+grid_search = GridSearchCV(gb, param_grid, cv=5, scoring='accuracy')
+grid_search.fit(X_train, y_train)
+
+# Now you can access the best parameters and the best score using the following properties:
+print("Best parameters: ", grid_search.best_params_)
+print("Best accuracy: ", grid_search.best_score_)
+
+# you can also access the best estimator by using:
+best_rf = grid_search.best_estimator_
+
+#You can also check all the results using
+results = grid_search.cv_results_
+
+#you can also use predict function on the best estimator
+y_pred = best_rf.predict(X_test)
+
+# you can also calculate accuracy for the best estimator
+accuracy = accuracy_score(y_test, y_pred)
+print("Test accuracy: ", accuracy)
+
+```
 ### [Model Selection](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/5.%20Building%20Machine%20Learning%20Classifiers/5.7.%20Model%20Selection.ipynb)
+To evaluate which model is the best fit for a task, you should compare the accuracy, precision, and recall of both the Random Forest and Gradient Boosting models on the same dataset.
+
+If the goal of the task is to maximize accuracy, then the model with the higher accuracy should be chosen. However, if the task requires a balance between precision and recall, then the F1-score, which is the harmonic mean of precision and recall, should be used. The model with the higher F1-score should be chosen in this case.
+
+It's worth noting that the dataset and the problem you're trying to solve might lead to one algorithm being better suited than the other. It's always a good idea to try different algorithms and compare their performance.
+
+So, it is solely dependent on the user's requirements. 
+
+To know more about the parameters, you can refer to the Medium's blog [here](https://towardsdatascience.com/comparing-random-forest-and-gradient-boosting-d7236b429c15)
+
+### CONGRATULATIONS!!! YOU HAVE REACHED THIS FAR, BUT
+
+<img src="https://user-images.githubusercontent.com/110394695/212535375-aec902ea-412e-4275-b097-98876a7a8aa8.gif" width="1000" height="400">
+
+
+**Ping me on my socials below, Let's connect!!!**
+
+
+<a href="https://www.linkedin.com/in/kshitiz-pandya-687659230/">
+  <img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="https://github.com/KshitizPandya">
+  <img alt="Github" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+<a href="https://kshitiz.pandya@gmail.com/">
+  <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+<a href="https://instagram.com/kshitiz._.pandya">
+  <img alt="Instagram" src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" />
+</a>
+</a>
+<a href="https://discord.gg/user/KENUBEE#1045">
+  <img alt="Discord" src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" />
+</a>
+
