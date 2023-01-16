@@ -11,7 +11,7 @@
 
 This repository covers the basic understanding of what is **Natural Language Processing (NLP)** and how we can achieve it using **Natural Language Tool Kit (NLTK**).
 
-We have used dataset given named as `SMSSpamCollection.tsv` which is a tab-seperated-values file. Our dataset is a semistructured text data of various SMSs which are marked as ham or spam. 
+I have used dataset given named as `SMSSpamCollection.tsv` which is a tab-seperated-values file. Our dataset is a semistructured text data of various SMSs which are marked as ham or spam. 
 
 
 Note - While reading this documentation, you can directly click on the topic hyperlinked to 
@@ -42,39 +42,36 @@ its respective `.ipynb` files.
 **Natural Language Processing (NLP)** refers to the branch of computer science and more specifically, the branch of Artificial Intelligence concerned with giving computers the ability to understnad text and spoken words in much the same way human beings can.*
 
 ### [What is NLP](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/1.%20NLP%20Basics/1.1.%20what%20is%20NLP.ipynb)
-First step of any project installation of necessary modules. Here we give light how to install NLTK and explore different functions of nltk module.
+First step of any project installation of necessary modules. Here I have given light on how to install NLTK and explore different functions of nltk module.
 
 ### [Reading in Text Data & Why Do We Need to Clean the Text](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/1.%20NLP%20Basics/1.2.%20reading%20in%20text%20data%20%26%20why%20do%20we%20need%20cleaning.ipynb)
 The first step of any task performed for processing is reading the data and retriving the information.
 
 Points covered here are:
-* splitting the data and create a list.
-* differentiating labels and texts.
+* Splitting the data and create a list.
+* Differentiating labels and texts.
 
 ### [How to Explore a Dataset](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/1.%20NLP%20Basics/1.3.%20How%20to%20explore%20a%20dataset.ipynb)
-Exploring the provided dataset is the next step to working with any big project which 
-requires NLP. 
+Exploring the provided dataset is the next step to working with any big project which requires NLP. 
 
 Points covered here are: 
-* reading in the text data from dataset (Here - `SMSSpamCollection.tsv`).
+* Reading in the text data from dataset (Here - `SMSSpamCollection.tsv`).
 * Exploring the dataset - shape, how many spam/ham are there?, how much missing data is there i.e, null values?
 
 ### [Learning How to Use Regular Expressions](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/1.%20NLP%20Basics/1.4.%20learning%20how%20to%20use%20regular%20expressions.ipynb)
-Regular expressions or in short known as regex is a defined as a sequence of characters 
-that specificies pattern in text.
+Regular expressions or in short known as regex is a defined as a sequence of characters that specificies pattern in text.
 
 Points covered here are:
 * What is `re package`.
-* difference between `.split()` and `.findall()`
-* splitting a sentence into a list of words.
+* Difference between `.split()` and `.findall()`
+* Splitting a sentence into a list of words.
     - exploring - \s, \s+, \W+, \S+, and various parameters.
-* replacing a specific string.
+* Replacing a specific string.
 
 Other functions of 're' can also be explored such as .search(), .match(), etc..
 
 ### [Implementating a Pipeline to Clean the Text](https://github.com/KshitizPandya/Natural-Language-Processing-with-Machine-Learning/blob/main/1.%20NLP%20Basics/1.5.%20implementing%20a%20pipeline%20to%20clean%20text.ipynb)
-Implementation of pre build pipelins for cleaning the text is a necessary task to
-get the desired output more efficiently. 
+Implementation of pre build pipelins for cleaning the text is a necessary task to get the desired output more efficiently. 
 
 Points covered here are: 
 * Remove Punctuations
@@ -96,7 +93,7 @@ or to the roots of words known as "lemmas".
 *In simple words - Stemming can be defined as a process of reducing 
 dervied words to their word stem or root word.*
 
-For example
+For example,
 - grows, growing, grow - when working with NLP models, in many situations it seems as if it would be useful for a search for one of these words to return which should be root to other similar words, here - 'grow'.
 - run, running, runner - here it seems that the root word is same which is - 'run', but this consideration is wrong as run and running are tasks but runner signifies a person. This should be clear to the model in its learning phase to avoid any misinterpretations or unsatisfactory outputs.
 
